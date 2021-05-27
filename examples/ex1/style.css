@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(189, 189, 189);
+}
+
+#heading2 {
+    color: red;
+}
+
+/* general sibling */
+h2 ~ p {
+    color: blue;
+}
+
+.special {
+    color:green;
+    font-size:3em;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    width: 20vw;
+    /* float: left; */
+    position: relative;
+    top:100px;
+    left:100px;
+    z-index: -1;
+}

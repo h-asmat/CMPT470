@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <form action="/session" method="post">
+    <fieldset>
+      <legend>USER</legend>
+      <div>
+      FNAME: <br /> <input type="text" value="" name="fname"></input>
+      </div>
+      <div>
+      LNAME: <br /> <input type="text" value="" name="lname"></input><br />
+      </div>
+      <div class="bdaydiv">
+      BIRTHDAY: <br /> <input class="bday" type="date" value="" name="age" onfocus="change(this)"></input><br />
+      </div>
+      <div class="email">
+      EMAIL: <br /> <input class="em" type="email" value="" name="email" value="bobbyc@sfu.ca"></input><br />
+      </div>
+      <div class="bdaydiv">
+        <label for="city">CITY:</label><br />
+        <select id="city" name="city" size="4" multiple>
+          <option value="Vancouver" selected>VANC</option>
+          <option value="Burnaby">BURN</option>
+          <option value="Surrey">SUR</option>
+        </select>
+      </div>
+      <div class="gender">
+        <label for="gender">GENDER:</label>
+        <div>
+          FEMALE: <input type="radio" id="girl" name="gender" value="female" checked></input><br />
+          MALE: <input type="radio" id="boy" name="gender" value="male"></input>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <input id="but" type="button" value="BUTTON"></input>
+        <input id="sub" type="submit" value="SUBMIT"></input>
+      </div>
+
+
+      </fieldset>
+    </form>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <footer id="foot"> </footer>
+  </body>
+</html>
