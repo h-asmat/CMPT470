@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <table id="gameGrid"></table>
+    <!-- <table>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+        <tr>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+            <td><button class="cellButton">.</button></td>
+
+        </tr>
+
+
+    </table> -->
+    <button>Reset Game</button>
+    <button>Show Solution</button>
+    <script type="text/javascript" src="script.js"></script>
+    <footer id="foot"> </footer>
+</body>
+
+</html>
